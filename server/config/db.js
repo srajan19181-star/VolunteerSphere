@@ -4,7 +4,7 @@ let mongoServer;
 
 const connectDB = async () => {
   try {
-    let uri = process.env.MONGO_URI || 'mongodb://localhost:27017/serviam';
+    let uri = process.env.MONGO_URI || 'mongodb://localhost:27017/volunteersphere';
     let isFallback = false;
 
     try {
@@ -21,7 +21,7 @@ const connectDB = async () => {
         const { MongoMemoryServer } = require('mongodb-memory-server');
         mongoServer = await MongoMemoryServer.create({
           instance: {
-            dbName: 'serviam',
+            dbName: 'volunteersphere',
           }
         });
         const memoryUri = mongoServer.getUri();

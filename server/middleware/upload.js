@@ -34,7 +34,7 @@ const localDiskStorage = multer.diskStorage({
 const cloudinaryStorage = isCloudinaryConfigured ? new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'serviam',
+    folder: 'volunteersphere',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
     transformation: [{ width: 300, height: 300, crop: 'limit' }]
   },

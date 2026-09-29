@@ -46,7 +46,7 @@ const register = async (req, res) => {
     // Send welcome email (non-blocking)
     sendEmail({
       to: user.email,
-      subject: 'Welcome to Serviam! 🌍',
+      subject: 'Welcome to VolunteerSphere! 🌍',
       html: welcomeEmailTemplate(user.name),
     });
 
@@ -149,7 +149,7 @@ const forgotPassword = async (req, res) => {
     const resetUrl = `${process.env.CLIENT_URL}/reset-password/${resetToken}`;
     await sendEmail({
       to: user.email,
-      subject: 'Serviam — Password Reset',
+      subject: 'VolunteerSphere — Password Reset',
       html: resetPasswordTemplate(user.name, resetUrl),
     });
 

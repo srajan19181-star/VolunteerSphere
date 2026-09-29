@@ -1,6 +1,6 @@
-# Serviam Deployment Guide
+# VolunteerSphere Deployment Guide
 
-This guide walks you through deploying the full-stack **Serviam** application. 
+This guide walks you through deploying the full-stack **VolunteerSphere** application. 
 
 Since the project is structured as a monorepo (with `/client` and `/server` folders), we will deploy the **backend API on Render** (free-tier Node.js hosting) and the **frontend client on Vercel** (free-tier optimized static hosting).
 
@@ -20,9 +20,9 @@ Render is great for hosting Node.js Express APIs. It automatically pulls changes
 ### Step-by-Step Instructions:
 1. Log in to your **Render Dashboard**.
 2. Click **New +** and select **Web Service**.
-3. Connect your **GitHub account** and choose the repository containing `Serviam`.
+3. Connect your **GitHub account** and choose the repository containing `VolunteerSphere`.
 4. Configure the Web Service settings:
-   * **Name**: `serviam-api` (or any custom name)
+   * **Name**: `volunteersphere-api` (or any custom name)
    * **Region**: Choose the region closest to you or your users.
    * **Branch**: `main` (or whichever branch you push to)
    * **Root Directory**: `server` *(Crucial: This tells Render to only build inside the server folder)*
@@ -36,7 +36,7 @@ Render is great for hosting Node.js Express APIs. It automatically pulls changes
      | Key | Value | Description |
      | :--- | :--- | :--- |
      | `MONGO_URI` | `mongodb+srv://...` | Your MongoDB Atlas connection string |
-     | `JWT_SECRET` | `serviam_super_secret_jwt_key_...` | A long, secure random password string |
+     | `JWT_SECRET` | `volunteersphere_super_secret_jwt_key_...` | A long, secure random password string |
      | `JWT_EXPIRE` | `7d` | Token lifespan |
      | `EMAIL_HOST` | `smtp.gmail.com` | SMTP host |
      | `EMAIL_PORT` | `587` | SMTP port |
@@ -48,7 +48,7 @@ Render is great for hosting Node.js Express APIs. It automatically pulls changes
      | `NODE_ENV` | `production` | Enables production mode |
      | `CLIENT_URL` | *(Leave empty for now, we will set this in Phase 3)* | The URL of your Vercel frontend |
 6. Click **Create Web Service**. 
-7. Once deployed, Render will provide a public URL for your API at the top-left of the page (e.g. `https://serviam-api.onrender.com`). **Copy this URL**.
+7. Once deployed, Render will provide a public URL for your API at the top-left of the page (e.g. `https://volunteersphere-api.onrender.com`). **Copy this URL**.
 
 ---
 
@@ -59,7 +59,7 @@ Vercel provides optimized hosting for static frontends like Vite and React.
 ### Step-by-Step Instructions:
 1. Log in to the **Vercel Dashboard**.
 2. Click **Add New...** and select **Project**.
-3. Import your GitHub repository containing `Serviam`.
+3. Import your GitHub repository containing `VolunteerSphere`.
 4. Configure the Project settings:
    * **Framework Preset**: `Vite` (Vercel detects this automatically)
    * **Root Directory**: Click *Edit* and select the `client` folder. *(Crucial: This tells Vercel to build the frontend)*
@@ -68,9 +68,9 @@ Vercel provides optimized hosting for static frontends like Vite and React.
    * Verify **Output Directory** is `dist`.
 6. Expand the **Environment Variables** section and add:
    * **Key**: `VITE_API_URL`
-   * **Value**: `https://YOUR-RENDER-API-URL/api` (e.g., `https://serviam-api.onrender.com/api` — *Note the trailing `/api`*)
+   * **Value**: `https://YOUR-RENDER-API-URL/api` (e.g., `https://volunteersphere-api.onrender.com/api` — *Note the trailing `/api`*)
 7. Click **Deploy**.
-8. Once complete, Vercel will give you a public URL (e.g., `https://serviam.vercel.app`). **Copy this URL**.
+8. Once complete, Vercel will give you a public URL (e.g., `https://volunteersphere.vercel.app`). **Copy this URL**.
 
 ---
 
@@ -79,10 +79,10 @@ Vercel provides optimized hosting for static frontends like Vite and React.
 For security, the backend needs to know the exact URL of the frontend so it allows logins and requests.
 
 ### Step-by-Step Instructions:
-1. Go back to your **Render Dashboard** and open your Web Service (`serviam-api`).
+1. Go back to your **Render Dashboard** and open your Web Service (`volunteersphere-api`).
 2. Go to the **Environment** tab.
 3. Find the `CLIENT_URL` variable.
-4. Set its value to your Vercel frontend URL (e.g., `https://serviam.vercel.app` — *No trailing slash*).
+4. Set its value to your Vercel frontend URL (e.g., `https://volunteersphere.vercel.app` — *No trailing slash*).
 5. Save changes. Render will automatically roll out a brief update to apply the change.
 
 ---

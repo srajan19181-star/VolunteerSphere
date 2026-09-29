@@ -24,7 +24,7 @@ const AdminLayout = () => {
     <div className={`flex flex-col h-full ${mobile ? 'w-72' : collapsed ? 'w-16' : 'w-60'} transition-all duration-300`}>
       {/* Logo */}
       <div className={`flex items-center gap-2.5 p-4 border-b border-white/10 ${collapsed && !mobile ? 'justify-center' : ''}`}>
-        {(!collapsed || mobile) && <span className="font-display text-sm font-bold text-white">Serviam</span>}
+        {(!collapsed || mobile) && <span className="font-display text-sm font-bold text-white">VolunteerSphere</span>}
       </div>
 
       {/* Nav */}

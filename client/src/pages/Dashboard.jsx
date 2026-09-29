@@ -147,9 +147,9 @@ const Dashboard = () => {
 
       doc.setTextColor(255, 255, 255, 0.9);
       doc.text(new Date().toLocaleDateString('en-IN'), 200, 305, { align: 'center' });
-      doc.text('Serviam Team', 400, 305, { align: 'center' });
+      doc.text('VolunteerSphere Team', 400, 305, { align: 'center' });
 
-      doc.save(`Serviam_Certificate_${user.name?.replace(/\s+/g, '_')}.pdf`);
+      doc.save(`VolunteerSphere_Certificate_${user.name?.replace(/\s+/g, '_')}.pdf`);
       toast.success('Certificate downloaded successfully!');
     }).catch((err) => {
       console.error(err);

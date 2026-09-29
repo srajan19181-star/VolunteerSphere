@@ -27,7 +27,7 @@ const generatePDF = (title, headers, rows, summary = '') => {
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(14);
     doc.setFont('helvetica', 'bold');
-    doc.text('Serviam', 10, 13);
+    doc.text('VolunteerSphere', 10, 13);
 
     // Title
     doc.setTextColor(30, 30, 30);

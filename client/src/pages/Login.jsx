@@ -71,7 +71,7 @@ const Login = () => {
         {/* Logo */}
         <motion.div variants={fadeInUp} initial="initial" animate="animate" className="text-center mb-8">
           <Link to="/" className="inline-flex items-center gap-2.5 mb-6">
-            <span className="font-display text-xl font-bold text-white">Serviam</span>
+            <span className="font-display text-xl font-bold text-white">VolunteerSphere</span>
           </Link>
           <h1 className="text-3xl font-display font-bold text-white">Welcome back</h1>
           <p className="text-white/50 font-body mt-2">Sign in to continue your journey</p>
@@ -134,7 +134,7 @@ const Login = () => {
 
             {/* Demo credentials hint */}
             <div className="space-y-2 text-xs font-mono text-white/40 bg-white/5 rounded-xl p-4 border border-white/5">
-              <div>👑 Admin: admin@serviam.com / Admin@1234</div>
+              <div>👑 Admin: admin@volunteersphere.com / Admin@1234</div>
               <div>👤 Volunteer: priya@demo.com / Demo@1234</div>
             </div>
           </div>

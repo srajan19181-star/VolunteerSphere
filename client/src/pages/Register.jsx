@@ -225,7 +225,7 @@ const Register = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center gap-2.5 mb-4">
-            <span className="font-display text-xl font-bold text-white">Serviam</span>
+            <span className="font-display text-xl font-bold text-white">VolunteerSphere</span>
           </Link>
           <h1 className="text-3xl font-display font-bold text-white">Create your account</h1>
           <p className="text-white/50 font-body mt-2">Join the movement. It&apos;s free.</p>
