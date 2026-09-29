@@ -16,16 +16,16 @@ const seedData = async () => {
   // Create admin
   const admin = await User.create({
     name: 'Admin User',
-    email: 'admin@volunteersphere.com',
+    email: 'admin@serviam.com',
     password: 'Admin@1234',
     role: 'admin',
     isVerified: true,
     isActive: true,
     skills: ['Management', 'Fundraising'],
     address: { city: 'Mumbai', state: 'Maharashtra', country: 'India' },
-    bio: 'Platform administrator for VolunteerSphere.',
+    bio: 'Platform administrator for Serviam.',
   });
-  console.log(`👤 Admin created: admin@volunteersphere.com / Admin@1234`);
+  console.log(`👤 Admin created: admin@serviam.com / Admin@1234`);
 
   // Create demo volunteers
   const volunteerData = [

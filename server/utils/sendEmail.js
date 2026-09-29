@@ -13,7 +13,7 @@ const sendEmail = async ({ to, subject, html }) => {
     });
 
     const info = await transporter.sendMail({
-      from: `"VolunteerSphere" <${process.env.EMAIL_USER}>`,
+      from: `"Serviam" <${process.env.EMAIL_USER}>`,
       to,
       subject,
       html,
@@ -45,16 +45,16 @@ const welcomeEmailTemplate = (name) => `
 <body>
   <div class="container">
     <div class="header">
-      <h1>🌍 VolunteerSphere</h1>
+      <h1>🌍 Serviam</h1>
     </div>
     <div class="body">
       <h2 style="color:#F8FAFC">Welcome, ${name}! 🎉</h2>
-      <p>You've officially joined the VolunteerSphere community. Your journey to make a real difference starts now.</p>
+      <p>You've officially joined the Serviam community. Your journey to make a real difference starts now.</p>
       <p>Explore upcoming events, connect with your community, and start logging your volunteer hours today.</p>
       <a href="${process.env.CLIENT_URL}/events" class="btn">Browse Events →</a>
       <p>If you have any questions, reach out to our support team anytime.</p>
     </div>
-    <div class="footer">© ${new Date().getFullYear()} VolunteerSphere. All rights reserved.</div>
+    <div class="footer">© ${new Date().getFullYear()} Serviam. All rights reserved.</div>
   </div>
 </body>
 </html>
@@ -84,7 +84,7 @@ const resetPasswordTemplate = (name, resetUrl) => `
       <a href="${resetUrl}" class="btn">Reset Password →</a>
       <p>If you didn't request this, you can safely ignore this email.</p>
     </div>
-    <div class="footer">© ${new Date().getFullYear()} VolunteerSphere</div>
+    <div class="footer">© ${new Date().getFullYear()} Serviam</div>
   </div>
 </body>
 </html>

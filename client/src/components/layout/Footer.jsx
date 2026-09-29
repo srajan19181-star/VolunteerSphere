@@ -21,7 +21,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="md:col-span-2 space-y-4">
           <div className="flex items-center gap-2.5">
-            <span className="font-display text-lg font-bold text-white">VolunteerSphere</span>
+            <span className="font-display text-lg font-bold text-white">Serviam</span>
           </div>
           <p className="text-white/50 text-sm font-body leading-relaxed max-w-xs">
             Connecting passionate volunteers with meaningful opportunities to create lasting change across communities worldwide.
@@ -62,7 +62,7 @@ const Footer = () => (
 
       <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-white/30 font-body">
-          © {new Date().getFullYear()} VolunteerSphere. All rights reserved.
+          © {new Date().getFullYear()} Serviam. All rights reserved.
         </p>
         <p className="text-xs text-white/30 font-body flex items-center gap-1">
           Made with <Heart size={12} className="text-accent-pink fill-current" /> for communities worldwide

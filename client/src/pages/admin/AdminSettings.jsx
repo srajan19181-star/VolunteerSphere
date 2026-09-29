@@ -39,7 +39,7 @@ const AdminSettings = () => (
 
     <motion.div variants={fadeInUp} initial="initial" animate="animate" className="p-4 rounded-xl bg-accent-purple/10 border border-accent-purple/20">
       <p className="text-sm text-white/60 font-body">
-        <span className="text-accent-purple font-semibold">VolunteerSphere v1.0.0</span> · MERN Stack · Local MongoDB
+        <span className="text-accent-purple font-semibold">Serviam v1.0.0</span> · MERN Stack · Local MongoDB
       </p>
     </motion.div>
   </div>

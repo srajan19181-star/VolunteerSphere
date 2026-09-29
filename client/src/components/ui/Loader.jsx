@@ -44,11 +44,11 @@ const Loader = ({ size = 'md', fullScreen = false }) => {
           >
             <img 
               src={logo} 
-              alt="VolunteerSphere Logo" 
-              className="w-14 h-14 rounded-2xl object-cover border border-white/15 shadow-2xl animate-pulse" 
+              alt="Serviam Logo"
+              className="w-14 h-14 rounded-2xl object-cover border border-white/15 shadow-2xl animate-pulse"
             />
             <h2 className="font-display text-2xl font-bold text-white tracking-wide">
-              VolunteerSphere
+              Serviam
             </h2>
           </motion.div>
           {spinner}

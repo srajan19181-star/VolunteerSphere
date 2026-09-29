@@ -1,7 +1,7 @@
 {
-  "name": "volunteersphere-server",
+  "name": "serviam-server",
   "version": "1.0.0",
-  "description": "VolunteerSphere Express API",
+  "description": "Serviam Express API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -89,7 +89,7 @@ const Landing = () => {
                 variants={fadeInUp}
                 className="text-base md:text-lg text-white/70 font-body max-w-xl mx-auto lg:mx-0 leading-relaxed"
               >
-                VolunteerSphere matches you with local NGOs, food drives, and coding bootcamps who actually need your hands. No corporate jargon, no subscription fees—just <span className="text-accent-cyan font-semibold">raw, direct impact</span> in your community.
+                Serviam matches you with local NGOs, food drives, and coding bootcamps who actually need your hands. No corporate jargon, no subscription fees—just <span className="text-accent-cyan font-semibold">raw, direct impact</span> in your community.
               </motion.p>
 
               <motion.div variants={fadeInUp} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 relative">
@@ -218,7 +218,7 @@ const Landing = () => {
               </p>
               <Link to="/register">
                 <Button variant="primary" size="xl" id="cta-join-now">
-                  Join VolunteerSphere <ArrowRight size={18} />
+                  Join Serviam <ArrowRight size={18} />
                 </Button>
               </Link>
             </div>

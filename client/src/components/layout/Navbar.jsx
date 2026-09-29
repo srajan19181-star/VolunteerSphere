@@ -68,8 +68,8 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <img src={logo} alt="VolunteerSphere Logo" className="w-6 h-6 object-contain" />
-              <span className="font-display text-lg font-bold text-white">VolunteerSphere</span>
+              <img src={logo} alt="Serviam Logo" className="w-6 h-6 object-contain" />
+              <span className="font-display text-lg font-bold text-white">Serviam</span>
             </Link>
 
             {/* Desktop Nav Links */}
